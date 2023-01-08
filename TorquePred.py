@@ -10,7 +10,7 @@ class TorquePred:
     def __init__(self, model_path, history = 8):
         self.f_lst = ['des_dx', 'x', 'dx', 'torque']
         self.history = history
-        self.model = self.torch.jit.load(model_path)
+        self.model = self.torch.load(model_path)
 
     
     def create_df(self, f):
