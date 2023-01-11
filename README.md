@@ -23,7 +23,7 @@ model.graph_predictions()
 | Parameter Name        | Type           | Description  |
 | ------------- |:-------------:| -----:|
 | model_path | str | Path to PyTorch model on user device. |
-| history | int, default = 8 | Number of lookbacks {t, t-1, t-2, ..., t-n} that the LSTM uses. Don't change value without altering the history in the model code as well. |
+| history | int, default = 8 | Number of lookbacks {t, t-1, t-2, ..., t- (n -1)} that the LSTM uses. Don't change value without altering the history in the model code as well. |
 
 ## .predict()
 | Parameter Name        | Type           | Description  |
