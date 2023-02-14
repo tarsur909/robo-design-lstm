@@ -7,9 +7,11 @@ Running TorquePred.py allows user to predict dataset of actuator torque using a 
 
 After downloading or cloning repo:
 ```python
+from TorqueLSTM import LSTM
 from TorquePred import TorquePred
 
 #load class
+model = LSTM()
 model = TorquePred('/Users/tarsur909/Documents/PythonStuff/lstm_scripted.pt')
 
 #return a dataframe with torque predictions and actual torque values as columns
